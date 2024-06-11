@@ -8,9 +8,13 @@ int main()
     {
         printf("Both\n");
     }
-    else if (a % k == 0 || b % k == 0)
+    else if (a % k == 0 && b % k > 0)
     {
         printf("Memo\n");
+    }
+    else if (a % k > 0 && b % k == 0)
+    {
+        printf("Momo\n");
     }
     else
     {
